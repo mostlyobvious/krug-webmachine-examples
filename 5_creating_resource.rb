@@ -17,7 +17,7 @@ class NoticeResource < Webmachine::Resource
 
   def to_json
     @notice.to_json
-    response.headers['Location'] = "/notice/#{@notice.id}"
+    # response.headers['Location'] = "/notice/#{@notice.id}"
   end
 
   def content_types_accepted
@@ -45,8 +45,8 @@ class NoticeResource < Webmachine::Resource
   end
 
   def create_path
-    "/dummy"
     # path for the new resource, used in Location header
+    # https://github.com/seancribbs/webmachine-ruby/pull/26
   end
 end
 
