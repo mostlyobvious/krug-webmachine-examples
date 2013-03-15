@@ -1,0 +1,14 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    i18n (0.6.4)
+    multi_json (1.6.1)
+    webmachine (1.1.0)
+      i18n (>= 0.4.0)
+      multi_json
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  webmachine
